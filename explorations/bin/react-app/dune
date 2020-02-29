@@ -1,6 +1,7 @@
 (executable
  (name Main)
- (ocamlopt_flags -unsafe -inline 100)
+ (ocamlopt_flags -inline 100)
+ (flags (-w -9 -w -30 -w -40 -w +26 -w -27 -w -37))
  (preprocess (pps reactjs_jsx_ppx_v4))
  (public_name ReactApp.exe)
  (libraries static-react.reactlib static-react.interact))
